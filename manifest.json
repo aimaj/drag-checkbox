@@ -1,0 +1,19 @@
+{
+
+    "manifest_version": 2,
+    "name": "drag-checkbox",
+    "version": "1.0",
+  
+    "description": "Sets the favicon for different Salesforce organisations to different colours, to differentiate in tab view.",
+  
+    "permissions": [
+    ],
+
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["script.js"]
+        }
+    ]
+  
+  }
