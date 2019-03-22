@@ -4,7 +4,7 @@
     "name": "drag-checkbox",
     "version": "1.0",
   
-    "description": "Sets the favicon for different Salesforce organisations to different colours, to differentiate in tab view.",
+    "description": "Checks all checkboxes within a click and dragged area, deselects if all are already checked.",
   
     "permissions": [
     ],
@@ -12,7 +12,9 @@
     "content_scripts": [
         {
           "matches": ["<all_urls>"],
-          "js": ["script.js"]
+          "js": ["script.js"],
+          "match_about_blank": true,
+          "all_frames": true
         }
     ]
   
