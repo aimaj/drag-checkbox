@@ -49,7 +49,7 @@ function processClickAndDrag(endPosX, endPosY) {
             (endPosX >= posObject.right && posObject.right >= startPosX || endPosX <= posObject.right && posObject.right <= startPosX)) {
             
             //if any of the checkboxes are unchecked, mark the allChecked as false to prevent unchecking functionality
-            if (checkboxes[i].checked = false) {
+            if (checkboxes[i].checked === false) {
                 allChecked = false;
             }
             //add the checkbox to the list of inputs within the selection
